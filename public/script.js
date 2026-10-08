@@ -1,19 +1,26 @@
 const checklist = [
-  { title: "Research", items: [
-    "Pick a species that fits my lifestyle",
-    "Find an exotic vet nearby",
-    "Check my landlord / local laws allow it",
-    "Budget for ongoing costs (food, electricity, vet)",
-    "Arrange care for when I travel",
+  { title: "facts", items: [
+     { note: "Crested geckos are a species of lizards that likes to climb." },
+     { note: "In containment they can live up to 20 years." },
+     {note: "Females are slightly larger than males. At avrage they get around 30 cm"},
+     "i have read teh things above"
+
+    
   ]},
   { title: "Enclosure", items: [
     "Terrarium of the right size",
+    { note: "The minium for a adult is 45x45x60 (CM) though 60x60x90 (CM) is better." },
     "Secure, escape-proof lid",
-    "Substrate",
     "Hides (warm side and cool side)",
     "Climbing branches and decorations",
   ]},
+   { title: "Substrate", items: [
+    "Pick if you want a bio active or not",
+    { note: "Bio-active means that the terrarium has real plants and insects that cleans." },
+    "The corect type of substrate",
+  ]},
   { title: "Heating & Lighting", items: [
+    {note: "They need 22 - 26'C for the day and 18 - 24'C at night"},
     "Basking lamp and bulb",
     "UVB light",
     "Thermostat",
@@ -55,6 +62,12 @@ checklist.forEach((cat, i) => {
   const ul = document.createElement("ul");
   cat.items.forEach(item => {
     const li = document.createElement("li");
+    if (item.note) {
+      li.className = "note";
+      li.textContent = item.note;
+      ul.append(li);
+      return;
+    }
     const label = document.createElement("label");
     const box = document.createElement("input");
     box.type = "checkbox";
