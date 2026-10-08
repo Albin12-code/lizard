@@ -3,19 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>All About Lizards</title>
+  <title>Lizard Checklist</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>All About Lizards</h1>
-    <p>Scaly, speedy, and surprisingly diverse.</p>
+    <h1>Before I Get a Lizard</h1>
+    <p>Everything I need, ticked off one by one.</p>
+    <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+      <div class="progress-bar" id="bar"></div>
+    </div>
+    <p id="count" class="count"></p>
   </header>
-  <main>
-    <section>
-      <h2>What is a lizard?</h2>
-      <p>Lizards are reptiles with over 7,000 species, from tiny geckos to the Komodo dragon.</p>
-    </section>
-  </main>
+  <main id="lists"></main>
+  <footer>
+    <button id="reset" type="button">Reset checklist</button>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
