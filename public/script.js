@@ -13,6 +13,7 @@ const checklist = [
     "Secure, escape-proof lid",
     "Hides (warm side and cool side)",
     "Climbing branches and decorations",
+    { note: "https://www.reptiles.swelluk.com/exo-terra-glass-terrarium-45x45x90cm#glass-terrarium-45x45x90cm"}
   ]},
    { title: "Substrate", items: [
     "Pick if you want a bio active or not",
